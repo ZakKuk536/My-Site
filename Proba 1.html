@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Зак Павлов</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav aria-label="Главная навигация">
+            <ul>
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#video">Видео</a></li>
+                <li><a href="#table">Таблица</a></li>
+                <li><a href="#list">Список</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Зак Павлов – начинающий разработчик</h1>
+            <div class="about-container">
+                <img src="https://www.notik.ru/content/img/1590125692_04-laptop-for-coding.jpg" 
+                     alt="Ноутбук с кодом на экране" class="profile-image">
+                <p><strong>👋 Привет! Меня зовут Зак Павлов, и я начинающий программист, увлеченный созданием качественного кода и решением сложных задач.</strong></p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Мои навыки</h2>
+            <ul>
+                <li><strong>Языки программирования:</strong> Python, JavaScript, HTML, CSS</li>
+                <li><strong>Фреймворки и библиотеки:</strong> React, Django, Node.js</li>
+                <li><strong>Работа с базами данных:</strong> MySQL, PostgreSQL, MongoDB</li>
+                <li><strong>Контроль версий:</strong> Git, GitHub</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Галерея</h2>
+            <div class="slider">
+                <div class="slides">
+                    <figure>
+                        <img src="https://de.ifmo.ru/uploads/images/eee5ab277f0130b5.jpg" alt="Изображение кода">
+                        <figcaption>Код в редакторе</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://storage.nic.ru/ru/images/png/1.code-12.png" alt="Пример программирования">
+                        <figcaption>Работа с консолью</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-8DVPZOJAIJhS0tfEpx6AVN7qFuRFnIyQg&s" 
+                             alt="Рабочий процесс программиста">
+                        <figcaption>Разработка приложения</figcaption>
+                    </figure>
+                </div>
+                <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="video">
+            <h2>Видео</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/tsPjsCNEvvY" allowfullscreen title="Видео о программировании"></iframe>
+            </div>
+        </section>
+
+        <section id="table">
+            <h2>Таблица данных</h2>
+            <table>
+                <caption>Сравнение технологий</caption>
+                <thead>
+                    <tr>
+                        <th>Технология</th>
+                        <th>Описание</th>
+                        <th>Применение</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Разметка веб-страниц</td>
+                        <td>Веб-разработка</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Стилизация элементов</td>
+                        <td>Веб-дизайн</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Динамическое поведение</td>
+                        <td>Интерактивные сайты</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="list">
+            <h2>Список</h2>
+            <ol>		
+                <li>Vegetables</li>	
+                <li>Fruit
+                   <ul>				
+                      <li>Blueberries</li>
+                      <li>Bananas</li>
+                   </ul>
+                </li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>
